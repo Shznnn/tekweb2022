@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.bg{
+    background-color: #FCECDD;
+    min-height: 1400px;
+    width: 100%;
+    overflow: hidden;
+}
+.head{
+    overflow: hidden;
+    top: 0;
+    width: calc(100% + 150px);
+    height: 80px;
+    background-color: #FFC288;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: calc(-10% - -50px);
+}
+.head button{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #FF6701;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.head button:hover{
+    width: 190px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #FF6701;
+    color: white;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.conhead{
+    text-align: center;
+}
+.conhead p{
+    font-size: 0.8em;
+    margin-top: -5px;
+}
+.profil{
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    background-color: #FFC288;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.foto img{
+    width: 300px;
+    border-radius: 10px;
+}
+.sosmed{
+    position: relative;
+    visibility: visible;
+    display: grid;
+    margin-left: 300px;
+}
+.sosmed img{
+    width: 50px;
+    background-color: #FFC288;
+}
+.sosmed button{
+    border: none;
+    background-color: #FFC288
+}
+.univ{
+    width: 500px;
+    padding: 50px;
+    background-color: #FF6701;
+    position: absolute;
+    visibility: hidden;
+    margin-left: 400px;
+    border-radius: 10px;
+}
+.content{
+    margin: 20px;
+}
+.content img{
+    width: 30px;
+    background-color: #FFC288;
+}
+.content button{
+    background-color: #FFC288;
+    border: none;
+}
+.univ button{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: #FFC288;
+    border: none;
+    border-radius: 5px;
+}

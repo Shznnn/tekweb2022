@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/article2.css">
+    <title>Belajar HTML 2</title>
+</head>
+<body>
+    <div class="bg" id="bg">
+        <div class="head">
+            <div class="conhead">
+                <h1>ZN blog</h1>
+                <p>setitik asa untuk literasi bangsa</p>
+            </div>
+            <a href="index.html"><button>Home</button></a>
+            <a href="news.html"><button>News</button></a>
+            <a href="#"><button>Contact</button></a>
+        </div>
+        <div class="content">
+            <article>
+                <h1>{{ judul }}</h1>
+                <p class="chld">{{ penulis }}</p>
+                <p class="chld">{{ tanggal }}</p>
+                <br>
+                <p>{{ p1 }}</p>
+                <p>{{ p2 }}</p>
+                <ol>
+                    <li>{{ li1 }}</li>
+                </ol>
+                <p>{{ p4 }}</p>
+                <ul>
+                    <li>{{ li2 }}</li>
+                    <li>{{ li3 }}</li>
+                </ul>
+                <p>{{ p5 }}</p>
+                <ul>
+                    <li>{{ li4 }}</li>
+                    <li>{{ li5 }}</li>
+                    <li>{{ li6 }}</li>
+                    <li>{{ li7 }}</li>
+                </ul>
+                <ol>
+                    <li>{{ li8 }}</li>
+                </ol>
+                <img src="assets/syntax-html.jpg" alt="">
+                <ol>
+                    <li>{{ li9 }}</li>
+                </ol>
+                <ul>
+                    <li>{{ li10 }}</li>
+                    <li>{{ li11 }}</li>
+                    <li>{{ li12 }}</li>
+                    <li>{{ li13 }}</li>
+                </ul>
+                <img src="assets/save html.jpg" alt="">
+                <ol>
+                    <li>{{ li14 }}</li>
+                </ol>
+                <ul>
+                    <li>{{ li15 }}</li>
+                    <li>{{ li16 }}</li>
+                    <li>{{ li17 }}</li>
+                    <li>{{ li18 }}</li>
+                </ul>
+                <img src="assets/result-html.jpg" alt="">
+            </article>
+            <h3>Apakah artikel ini berguna?</h3>
+            <button onclick="download()"><img src="https://img.icons8.com/external-tulpahn-detailed-outline-tulpahn/64/000000/external-download-mobile-user-interface-tulpahn-detailed-outline-tulpahn.png" />Download</button></a>
+        </div>
+        <div class="foot">
+            <h3>Artikel lainnya</h3>
+            <div class="cfoot">
+                <img src="assets/html5.png" alt="">
+                <a href="">Belajar HTML 1</a>
+            </div>
+            <div class="cfoot">
+                <img src="assets/html5.png" alt="">
+                <a href="">Belajar HTML 3</a>
+            </div>
+            <div class="cfoot">
+                <img src="assets/html5.png" alt="">
+                <a href="">Belajar HTML 4</a>
+            </div>
+            <div class="cfoot">
+                <img src="assets/HTML.jpg" alt="">
+                <a href="">Mengenal Hypertext Markup Language</a>
+            </div>
+        </div>
+    </div>
+    <div class="pilih" id="pilih">
+        <div class="box">
+            <h2>Apakah anda ingin mendownload file?</h2>
+            <div class="sub-pilih">
+                <a href="downloads/Belajar HTML3.pdf" download><button id="Y"> Download </button></a>
+                <button id="N" onclick="no()">Tidak</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const isi={
+            judul:'Belajar HTML 2',
+            penulis: 'Sukir Santoso',
+            tanggal: '30 oktober 2021',
+            p1:'Untuk membuat dokumen HTML kita membutuhkan editor teks HTML. Editor teks HTML sederhana yang kita butuhkan adalah Notepad untuk program Windows atau TextEdit untuk Mac.',
+            p2:'Langkah-langkah untuk membuat dokumen HTML',
+            li1:'Langkah 1 : Buka Notepad',
+            p4:'Untuk Windows 8, 10 atau sesudahnya:',
+            li2:'Buka Start Screen (tombol Windows yang berada di pojok kiri bawah).',
+            li3:'Lalu tulis Notepad.',
+            p5:'Untuk Windows 7 atau  sebelumnya:',
+            li4:'Buka Start',
+            li5:'Pilih Program',
+            li6:'Pilih Accessoris',
+            li7:'Pilih Notepad',
+            li8:'Langkah 2: Tulis Teks HTML',
+            li9:'Langkah 3 : Simpan Teks HTML',
+            li10:'Simpan file dengan klik File lalu pilih Save as.',
+            li11:'Beri nama  Index.htm atau Index.html',
+            li12:'Setel  encoding pada UTF-8',
+            li13:'Klik Save',
+            li14:'Langkah 4 : Buka Halaman HTML di Browser ',
+            li15:'Double Klik atau Klik Kanan File yang tersimpan tadi',
+            li16:'Pilih Open with',
+            li17:'Pilih browser yang kita sukai',
+            li18:'Kenampakanya akan seperti ini:',
+
+        }
+        const vm = new Vue({
+            el:'.content',
+            data: isi
+        })
+    </script>
+    <script>
+        function download() {
+            document.getElementById("pilih").style.visibility = 'visible';
+            document.getElementById("bg").style.filter = 'grayscale(50%) brightness(50%) blur(3px)';
+            document.getElementById("pilih").style.filter = 'grayscale(0%) brightness(100%) blur(0px)';
+        }
+        function no() {
+            document.getElementById("pilih").style.visibility = 'hidden';
+            document.getElementById("bg").style.filter = 'grayscale(0%) brightness(100%) blur(0px)';
+        }
+    </script>
+</body>
+</html>
