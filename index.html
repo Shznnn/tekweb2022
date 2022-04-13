@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <title>Home</title>
+</head>
+<body id="app">
+    <div class="bg" id="bg">
+        
+        <div class="parallax">
+            <div class="moon">
+                <div class="moonin" id="moonin" onclick="klik()">
+                    <img src="assets/moon.png" alt="">
+                </div>
+                <div class="moonout" id="moonout" onclick="kluar()">
+                    <img src="assets/moon.png" alt="">
+                </div>
+            </div>
+            <div class="tree1">
+                    <img src="assets/tree.png" alt="">
+            </div>
+            <div class="tree2" id="2">
+                    <img src="assets/tree.png" alt="">
+            </div>
+            <div class="tree3">
+                    <img src="assets/tree.png" alt="">
+            </div>
+            <div class="tree4">
+                    <img src="assets/tree.png" alt="">
+            </div>
+            <div class="bg-p">
+
+            </div>
+        </div>
+        <div class="navbar" id="navbar">
+            <div class="home" id="home">
+                <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/home.png" /></a>
+            </div>
+            <div class="project" id="project">
+                <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/laptop.png" /></a>
+            </div>
+            <div class="artikel" id="artikel">
+                <a href=""><img src="https://img.icons8.com/external-prettycons-lineal-prettycons/49/000000/external-article-user-interface-vol-3-prettycons-lineal-prettycons-3.png" /></a>
+            </div>
+            <div class="contact" id="contact">
+                <a href=""><img src="https://img.icons8.com/dotty/80/000000/contact-card.png" /></a>
+            </div> 
+        </div>
+        <div class="profil" onmouseenter="tulis()" id="profil">
+            <div class="frm" id="frame">
+
+            </div>
+            <div class="profil-isi">
+            <div class="bio" >
+                <h1 onmouseenter="pindah()">Hi, I'am <span id="warna">Syaiful Ihsan.</span></h1>
+                <p id="desc"></p>
+            </div>
+            <div class="bio-img">
+                <img src="assets/profil.jpg" alt="">
+            </div>
+            </div> 
+            <div class="sosmed">
+                <div class="instagram" id="ig">
+                    <a href=""><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" /></a>
+                </div>
+                <div class="youtube" id="yt">
+                    <a href=""><img src="https://img.icons8.com/color/48/000000/youtube-play.png" /></a>
+                </div>
+                <div class="whatsapp" id="wa">
+                    <a href=""><img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" /></a>
+                </div>
+                <div class="github"id="github">
+                    <a href=""><img src="https://img.icons8.com/color-glass/48/000000/github.png" /></a>
+                </div>
+            </div> 
+        </div>
+         <div class="myskill" onmouseenter="skill()">
+             <div class="frm1" onmouseenter="isi()">
+
+             </div>
+             <div class="myskill-isi" >
+                 <div class="head-skill" >
+                     <h2 id="skill-tls"></h2>
+                 </div>
+                 <div class="html">
+                     <p> {{ my1 }} </p>
+                     <div class="skill1" id="skill1">
+
+                     </div>
+                 </div>
+                <div class="css">
+                    <p>{{ my2 }}</p>
+                    <div class="skill2" id="skill2">
+                
+                    </div>
+                </div>
+                <div class="js">
+                    <p>{{ my3 }}</p>
+                    <div class="skill3" id="skill3">
+                
+                    </div>
+                </div>
+             </div> 
+        </div>
+        <div class="my-artikel">
+            <h1>My Artikel</h1>
+            <div class="isi-artikel">
+                <div class="isi-content">
+                    <img src="assets/html.jpg" alt="">
+                    <a href="artikel/article1.html">
+                    <div class="tulisan">
+                        <h2>{{ar1_jdl}}</h2>
+                        <p> {{ar1_pnls}} </p>
+                        <p> {{ar1_tgl}} </p>
+                    </div></a>
+                </div>
+                <div class="isi-content">
+                    <img src="assets/html.jpg" alt="">
+                    <div class="tulisan">
+                        <p>uwuwuwuuwuw</p>
+                    </div>
+                </div>
+                <div class="isi-content">
+                    <img src="assets/html.jpg" alt="">
+                    <div class="tulisan">
+                        <p>uwuwuwuuwuw</p>
+                    </div>
+                </div>
+                <div class="isi-content">
+                    <img src="assets/html.jpg" alt="">
+                    <div class="tulisan">
+                        <p>uwuwuwuuwuw</p>
+                    </div>
+                </div>
+                <div class="isi-content">
+                    <img src="assets/html.jpg" alt="">
+                    <div class="tulisan">
+                        <p>uwuwuwuuwuw</p>
+                    </div>
+                </div>
+                <div class="isi-content">
+                    <img src="assets/html.jpg" alt="">
+                    <div class="tulisan">
+                        <p>uwuwuwuuwuw</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-project">
+            <h1>My Project</h1>
+            <div class="isi-project">
+                <div class="isi-contentproject">
+                    <img src="assets/html.jpg" alt="">
+                    <div class="tulisan-project">
+                        <h3>uwuwuwuwu</h3>
+                        <p>uwuwuwuuwuw</p>
+                    </div>
+                </div>
+                <div class="isi-contentproject">
+                    <img src="assets/html.jpg" alt="">
+                    <div class="tulisan-project">
+                        <h3>uwuwuwuwu</h3>
+                        <p>uwuwuwuuwuw</p>
+                    </div>
+                </div>
+                <div class="isi-contentproject">
+                    <img src="assets/html.jpg" alt="">
+                    <div class="tulisan-project">
+                        <h3>uwuwuwuwu</h3>
+                        <p>uwuwuwuuwuw</p>
+                    </div>
+                </div>
+                <div class="isi-contentproject">
+                    <img src="assets/html.jpg" alt="">
+                    <div class="tulisan-project">
+                        <h3>uwuwuwuwu</h3>
+                        <p>uwuwuwuuwuw</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    ScrollReveal({
+        reset: true,
+        distance: '100px',
+        duration: 1000,
+        delay: 0
+    });
+
+    ScrollReveal().reveal('.tree1', { delay: 0, origin: 'left' });
+    ScrollReveal().reveal('.tree3', { delay: 0, origin: 'left' });
+    ScrollReveal().reveal('.tree2', { delay: 0, origin: 'right' });
+    ScrollReveal().reveal('.tree4', { delay: 0, origin: 'right' });
+    ScrollReveal().reveal('.moon', { delay: 0, origin: 'bottom' });
+    ScrollReveal().reveal('.navbar', { delay: 0, origin: 'top' });
+    
+    </script> 
+    <script>
+        function klik() {
+            document.getElementById("moonin").style.visibility = "hidden";
+            document.getElementById("moonout").style.visibility = "visible";
+            document.getElementById("navbar").style.zIndex = "1";
+            document.getElementById("home").style.visibility = "visible";
+            document.getElementById("home").style.transform = "translate(-100px,-120px)";
+            document.getElementById("home").style.transition = "1s";
+            document.getElementById("home").style.transitionDelay = "0s";
+            document.getElementById("project").style.visibility = "visible";
+            document.getElementById("project").style.transform = "translate(30px,-150px)";
+            document.getElementById("project").style.transition = "1s";
+            document.getElementById("project").style.transitionDelay = "0.2s";
+            document.getElementById("artikel").style.visibility = "visible";
+            document.getElementById("artikel").style.transform = "translate(130px,-80px)";
+            document.getElementById("artikel").style.transition = "1s";
+            document.getElementById("artikel").style.transitionDelay = "0.4s";
+            document.getElementById("contact").style.visibility = "visible";
+            document.getElementById("contact").style.transform = "translate(150px,40px)";
+            document.getElementById("contact").style.transition = "1s";
+            document.getElementById("contact").style.transitionDelay = "0.6s";
+        }
+
+        function kluar() {
+                document.getElementById("moonout").style.visibility = "hidden";
+                document.getElementById("moonin").style.visibility = "visible";
+                document.getElementById("navbar").style.zIndex = "1";
+                document.getElementById("navbar").style.visibility = "hidden";
+                document.getElementById("home").style.visibility = "hidden";
+                document.getElementById("home").style.transform = "translate(0px,0px)";
+                document.getElementById("home").style.transition = "1s";
+                document.getElementById("home").style.transitionDelay = "0s";
+                document.getElementById("project").style.visibility = "hidden";
+                document.getElementById("project").style.transform = "translate(0px,0px)";
+                document.getElementById("project").style.transition = "1s";
+                document.getElementById("project").style.transitionDelay = "0.2s";
+                document.getElementById("artikel").style.visibility = "hidden";
+                document.getElementById("artikel").style.transform = "translate(0px,0px)";
+                document.getElementById("artikel").style.transition = "1s";
+                document.getElementById("artikel").style.transitionDelay = "0.4s";
+                document.getElementById("contact").style.visibility = "hidden";
+                document.getElementById("contact").style.transform = "translate(0px,0px)";
+                document.getElementById("contact").style.transition = "1s";
+                document.getElementById("contact").style.transitionDelay = "0.6s";
+            }
+            function pindah() {
+                document.getElementById("ig").style.transform="translateX(0px)";
+                document.getElementById("ig").style.visibility = "visible";
+                document.getElementById("ig").style.transitionDelay = "0s";
+                document.getElementById("yt").style.transform = "translateX(80px)";
+                document.getElementById("yt").style.visibility = "visible";
+                document.getElementById("yt").style.transitionDelay = "0.2s";
+                document.getElementById("wa").style.transform = "translateX(160px)";
+                document.getElementById("wa").style.visibility = "visible";
+                document.getElementById("wa").style.transitionDelay = "0.4s";
+                document.getElementById("github").style.transform = "translateX(240px)";
+                document.getElementById("github").style.visibility = "visible";
+                document.getElementById("github").style.transitionDelay = "0.6s";
+                
+            }
+            function isi() {
+                    document.getElementById("skill1").style.width = "80%";
+                    document.getElementById("skill1").style.transitionDelay = "0.4s";
+                    document.getElementById("skill2").style.width = "75%";
+                    document.getElementById("skill2").style.transitionDelay = "0.8s";
+                    document.getElementById("skill3").style.width = "50%";
+                    document.getElementById("skill3").style.transitionDelay = "1.2s";
+            }
+    </script>
+    <script>
+        var i = 0;
+        var j = 0;
+        var txt = 'I am a Web Developer';
+        var txt1 = 'This is My Skill';
+        var speed = 50;
+
+        function tulis() {
+            if (i < txt.length) {
+                document.getElementById("desc").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(tulis, speed);
+            }
+        }
+        function skill() {
+                if (j < txt1.length) {
+                    document.getElementById("skill-tls").innerHTML += txt1.charAt(j);
+                    j++;
+                    setTimeout(skill, speed);
+                }
+            }
+    </script>  
+     
+    <!-- VUE Js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
+    <script src="main.js"></script>                                                                                                    
+</body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+</html>

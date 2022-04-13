@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/article1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>belajar HTML 1</title>
+</head>
+<body>
+    <div class="bg" id="bg">
+        <div class="head" id="head">
+            <a href="index.html"><button>Home</button></a>
+        </div>
+        <div class="content" id="cntn">
+            <div class="btn-light">
+                <button onclick="gelep()"><img
+                    src="https://img.icons8.com/external-prettycons-solid-prettycons/60/000000/external-moon-astrology-and-symbology-prettycons-solid-prettycons.png" /></button>
+                <button onclick="tereng()"><img src="https://img.icons8.com/office/16/000000/sun--v1.png" /></button>
+            </div>
+            <article>
+                <h1>{{ judul }}</h1>
+                <p class="chld">{{ penulis }}</p>
+                <p class="chld">{{ tanggal }}</p>
+                <br>
+                <p>{{ p1 }}</p>
+                <p>{{ p2 }}</p>
+                <p>{{ p3}}</p>
+                <p>Dokumen diatas akan muncul menjadi seperti ini</p>
+                <br>
+                <img src="assets/syntax-html.jpg" alt="" style="width: 700px; height: auto;">
+                <br>
+                <ul>
+                    <li>{{ li1 }}</li>
+                    <li>{{ li2 }}</li>
+                    <li>{{ li3 }}</li>
+                    <li>{{ li4 }}</li>
+                    <li>{{ li5 }}</li>
+                    <li>{{ li6 }}</li>
+                    <li>{{ li7 }}</li>
+                </ul>
+                <p>{{ p4 }}</p>
+                <br>
+                <img src="assets/result-html.jpg" alt="" style="width: 700px; height: auto;">
+            </article>
+            <h3> {{ download }} </h3>
+            <button onclick="download()">Download .pdf</button>
+        </div>
+        <div class="foot" id="foot">
+            <h3>Artikel lainnya</h3>
+            <div class="cfoot">
+                <a href="">Belajar HTML 1</a>
+            </div>
+            <div class="cfoot">
+                <a href="">Belajar HTML 3</a>
+            </div>
+            <div class="cfoot">
+                <a href="">Belajar HTML 4</a>
+            </div>
+            <div class="cfoot">
+                <a href="">Mengenal Hypertext Markup Language</a>
+            </div>
+        </div>
+    </div>
+    <div class="pilih" id="pilih">
+        <div class="box">
+            <h2>Apakah anda ingin mendownload file?</h2>
+            <div class="sub-pilih">
+                <a href="downloads/Belajar HTML3.pdf" download><button id="Y"> Download </button></a>
+                <button id="N" onclick="no()">Tidak</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        const isi = {
+            //content
+
+            judul:'Belajar HTML 1',
+            penulis:'Sukir Santoso',
+            p1:'HTML ( Hyper Text Markup Language) adalah kode atau Bahasa “mark up” untuk menyusun bangunan web. Dengan kode HTML tersebut, kita dapat mendeskripsikan struktur dari halaman web dengan elemen-elemen “mark up”. Elemen-elemen itu akan memerintahkan browser untuk menyajikan konten dari halaman. Elemen itu juga memberi label bagian dari konten, misalnya judul, paragraph, link dan sebagainya.',
+            p2:'HTML menggunakan bahasa "markup" untuk menganotasi teks, gambar, video dan konten lainnya untuk ditampilkan di browser.',
+            p3:'Elemen-elemen itu seperti <head>, <title>, <body>, <header>, <footer>, <article>, <section>, <p>, <div>, <span>, < img>, <aside>, <audio>, <canvas>, <datalist>, <detail>, <embed>, <nav>, <output>, <progress>, <video>, <ul>, <ol> , <li> dan sebagainya.',
+            li1:'deklarasi <!DOCTYPE html>  menyatakan bahwa dokumen ini menggunakan  HTML5.',
+            li2:'elemen  <html>  wadah dari halaman HTML.',
+            li3:'elemen <head>    berisi meta informasi tentang halaman HTML.',
+            li4:'elemen <title>    memberikan judul untuk halaman HTML (akan terlihat pada jendela judul atau tab halaman).',
+            li5:'elemen <body>  mendefinisikan badan dari halaman, dan berfungsi sebagai wadah bagi konten yang akan terlihat di browser, seperti  judul, paragraf, gambar, hyperlink, tabel, daftar dan sebagainya.',
+            li6:'elemen <h1> menyatakan judul dengan tulisan paling besar.',
+            li7:'elemen <p> yang mendefinisikan paragraph.',
+            p4:'Adapun hasil dari syntax diatas akan menjadi seperti ini',
+            tanggal:'30 oktober 2021',
+            
+            // download
+
+            download:'Apakah artikel ini berguna?'
+            
+        }
+
+        const vm = new Vue({
+            el: ".bg",
+            data: isi
+        })
+    </script>
+    <script>
+        function download() {
+            document.getElementById("pilih").style.visibility = 'visible';
+            document.getElementById("bg").style.filter = 'grayscale(50%) brightness(50%) blur(3px)';
+            document.getElementById("pilih").style.filter = 'grayscale(0%) brightness(100%) blur(0px)';
+        }
+        function no() {
+            document.getElementById("pilih").style.visibility = 'hidden';
+            document.getElementById("bg").style.filter = 'grayscale(0%) brightness(100%) blur(0px)';
+        }
+        function gelep() {
+                document.getElementById("cntn").style.backgroundColor = 'black';
+                document.getElementById("cntn").style.color = 'white';
+                document.getElementById("bg").style.backgroundColor = 'black';
+                document.getElementById("bg").style.color = 'white';
+                document.getElementById("head").style.backgroundColor = 'black';
+                document.getElementById("head").style.color = 'white';
+                document.getElementById("foot").style.backgroundColor = 'black';
+                document.getElementById("foot").style.color = 'white';
+        }
+        function tereng() {
+                document.getElementById("cntn").style.backgroundColor = 'white';
+                document.getElementById("cntn").style.color = 'black';
+                document.getElementById("bg").style.backgroundColor = 'white';
+                document.getElementById("bg").style.color = 'black';
+                document.getElementById("head").style.backgroundColor = 'white';
+                document.getElementById("head").style.color = 'black';
+                document.getElementById("foot").style.backgroundColor = 'white';
+                document.getElementById("foot").style.color = 'black';
+            }
+    </script>
+</body>
+</html>
