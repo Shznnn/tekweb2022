@@ -102,15 +102,9 @@ body{
     animation: pohon 5s infinite;
 }
 @keyframes pohon {
-    0% {
-        transform: skew(0deg);
-    }
-    50% {
-        transform: skew(8deg);
-    }
-    100% {
-        transform: skew(0deg);
-    }
+    0% {transform: skew(0deg);}
+    50% {transform: skew(8deg);}
+    100% {transform: skew(0deg);}
 }
 .tree2 {
     width: 25%;
