@@ -1,0 +1,50 @@
+[
+    {
+        "ID": "1",
+        "Title1": "Mengenal HTML",
+        "Author1": "Eko Heri Susanto",
+        "Thumbnail1": "https://raw.githubusercontent.com/Shznnn/tekweb2022/main/assets/html.jpg",
+        "Content1": "Apa sih HTML itu?",
+        "markdown1": "article1.md"
+    },
+    {
+        "ID": "2",
+        "Title2": "PHPMaker, Bukan Pembuat Pemberi Harapan Palsu",
+        "Author2": "Masino sinaga",
+        "Thumbnail2": "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article2_thumbnail.jpg",
+        "Content2": "PHP merupakan singkatan dari PHP: Hypertext Preprocessor. ",
+        "markdown2": "article2.md"
+    },
+    {
+        "ID1": "3",
+        "Title3": "Web interaktif bagi sekolah",
+        "Author3": "Zulkarnaen",
+        "Thumbnail3": "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article3_thumbnail.jpg",
+        "Content3": "Melalui web interaktif, sekolah bisa membuat semacam forum bagi Guru, Orangtua siswa dan peserta didik untuk saling berinteraksi dan berkomunikasi untuk kemajuan sekolah.",
+        "markdown3": "article3.md"
+    },
+    {
+        "ID": "4",
+        "Title4": "Blog atau website pribadi, mana yang lebih bagus untuk anda?",
+        "Author4": "Dadan",
+        "Thumbnail4": "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article4_thumbnail.jpg",
+        "Content4": "Disini saya  akan menjelaskan perbedaan kedua istilah tersebut dan mana yang lebih bagus menurut versi saya.",
+        "markdown4": "article4.md"
+    },
+    {
+        "ID": "5",
+        "Title5": "Disini saya  akan menjelaskan perbedaan kedua istilah tersebut dan mana yang lebih bagus menurut versi saya.",
+        "Author5": " Agung sulistyo",
+        "Thumbnail5": "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article5_thumbnail.jpg",
+        "Content5": "Banyak dari para teman Blogger yang bertanya dan bingung antara blogspot/blogger dan wordpress lebih baik mana ? ",
+        "markdown5": "article5.md"
+    },
+    {
+        "ID": "6",
+        "Title6": "Cara Mudah memulai email champaign.",
+        "Author6": " Kelvin layzuardy",
+        "Thumbnail6": "https://raw.githubusercontent.com/firoos18/tekweb2022/main/assets/img/article5_thumbnail.jpg",
+        "Content6": "ideo tutorial DocoBlast kali ini akan menjelaskan mudahnya memulai campaign email marketing melalui email editor maupun html editor ",
+        "markdown6": "article5.md"
+    }
+]
