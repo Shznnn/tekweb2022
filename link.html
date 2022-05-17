@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artikel</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/link.css">
+</head>
+
+<body id="bg-body">
+    <div class="color">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="button" onclick="warna()" id="btn"></label>
+    </div>
+    <div class="content" id="app">
+        <div v-html="markdown"></div>
+    </div>
+    <script src="second.js"></script>
+
+
+</body>
+<script>
+    function warna() {
+        var X = document.getElementById("toggle");
+        var Y = document.getElementById("bg-body");
+        var Z = document.getElementById("app");
+        var btn = document.getElementById("btn");
+
+        if (X.checked == true) {
+            btn.style.background = "linear-gradient(208deg, #FFFFFF 0%, #FF4E00 100%)";
+            Y.style.background = "black";
+            Z.style.background = "black";
+            Z.style.color = "white";
+            
+        } else {
+            btn.style.background = " linear-gradient(90deg, #000 0%, #8A19FF 100%)";
+            Y.style.background = "white";
+            Z.style.background = "white";
+            Z.style.color = "black";
+        }
+    }
+</script>
+
+</html>
