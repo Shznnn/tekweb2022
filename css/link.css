@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+}
+.content{
+    background-color: black;
+    color: white;
+
+}
+.content button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(36deg, #8A19FF 0%, #13A2CA 100%);
+    color: white;
+}
+#toggle{
+    display: none;
+}
+.button{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    background: linear-gradient(208deg, #FFFFFF 0%, #FF4E00 100%);
+    border-radius: 30px;
+}
+.button::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+#toggle:checked + .button::after{
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(-36deg, #8A19FF 0%, #13A2CA 100%);
+    transform: translateX(50px) rotate(360deg);
+    transition-delay: 0s;
+    
+}
