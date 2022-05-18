@@ -1,0 +1,1716 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins',
+    sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.bg{
+    background-color: rgb(0, 0, 0);
+    height: 6000px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.parallax{
+    background-image: url(../assets/bg.jpg);
+    width: calc(100% + 50px);
+    height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.stars{
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.child1 img,
+.child2 img,
+.child3 img,
+.child4 img,
+.child5 img{
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    transform: scale(3);
+    animation: stars 2s infinite;
+    
+}
+.child1 img,
+.child3 img,
+.child5 img{
+    margin-top: 150px;
+    animation: stars2  3s infinite;
+    animation-delay: 3s;
+    transition: 1s;
+}
+@keyframes stars {
+    0%{transform: scale(1)};
+    50%{transform: scale(3)};
+    100%{transform: scale(1)};
+}
+@keyframes stars2 {
+    0%{transform: scale(1)};
+    50%{transform: scale(3)};
+    100%{transform: scale(1)};
+}
+.fall{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+.fall1, .fall2, .fall3{
+    width: 5px;
+    height: 80px;
+    background: linear-gradient(360deg, #ffebcd 0%, #12529C 100%);
+    border-radius: 50%;
+    margin: 10px;
+    transform: translate(-100px, -300px)
+}
+.fall1{
+    animation: fall1 5s linear infinite;
+    animation-delay: 0s;
+}
+@keyframes fall1 {
+    from{transform: translate(2000px, -300px) rotate(50deg);}
+    to{transform: translate(0px, 1000px) rotate(50deg);}
+    
+}
+.fall2{
+    animation: fall2 6s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes fall2 {
+    from{transform: translate(1000px, -300px) rotate(45deg);}
+    to{transform: translate(-500px, 1000px) rotate(45deg);}
+    
+}
+.fall3{
+    animation: fall3 7s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes fall3 {
+    from{transform: translate(2000px, -300px) rotate(45deg);}
+    to{transform: translate(500px, 1000px) rotate(45deg);}
+    
+}
+.moon{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-left: 500px;
+    transform: translateY(150px);
+    background-color: none;
+}
+.moonin{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 10px rgba(250, 235, 215, 0.7);
+    background-color: rgb(250, 235, 215, 0.4);
+    visibility: visible;
+    z-index: 7;
+    cursor: pointer;
+    transition: 1s;
+}
+.moonout {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 10px rgba(250, 235, 215, 0.7);
+    background-color: rgb(250, 235, 215, 0.4);
+    visibility: hidden;
+    z-index: 7;
+    cursor: pointer;
+    transition: 1s;
+}
+.moonin img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    transition: 1.5s;
+}
+.moonout img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    transition: 1.5s;
+    animation: puter 15s infinite;
+}
+
+.bg-p{
+    width: 100%;
+    height: 900px;
+    overflow-x: hidden;
+}
+.bg-p img{
+    width: 100%;
+    height: 900px;
+
+}
+.tree1{
+    width: 25%;
+    height: 500px;
+    position: absolute;
+    z-index: 5;
+    
+}
+.tree1 img , .tree2 img , .tree3 img , .tree4 img{
+    width: 700px;
+    height: auto;
+    opacity: 0.9.9;
+    animation: pohon 5s infinite;
+}
+@keyframes pohon {
+    0% {
+        transform: skew(0deg);
+    }
+    50% {
+        transform: skew(8deg);
+    }
+    100% {
+        transform: skew(0deg);
+    }
+}
+.tree2 {
+    width: 25%;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+}
+.tree3 {
+    width: 25%;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+}
+.tree4 {
+    width: 25%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    z-index: 5;
+}
+.tree1 , .tree2{
+    margin-top: 200px;
+    z-index: 1;
+}
+.tree3, .tree4 {
+    margin-top: 150px;
+    z-index: 1;
+}
+.tree1 img {
+    
+    margin-left: 300px;
+}
+.tree2 img  {
+    margin-left: -600px;
+}
+.tree3 img{
+    margin-left: -50px;
+}
+.tree4 img{
+    margin-left: -300px;
+}
+.navbar{
+    background-color: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    margin-left: 540px;
+    margin-top: 170px;
+    z-index: 1;
+    transition: 2s;
+    animation: puter 15s linear infinite;
+}
+@keyframes puter{
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+.navbar img{
+    width: 40px;
+    height: 40px;
+    animation: gambar 15s linear infinite;
+}
+@keyframes gambar {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+.home,.project,.artikel,.contact{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 248, 233);
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 50px 10px rgba(250, 235, 215, 0.7);
+    visibility: hidden;
+    z-index: 8;
+}
+.profil{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 500px;
+    height: 500px;
+    border: 10px double  rgb(16, 135, 225);
+}
+.frm{
+    width: 80%;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -30px;
+    height: 500px;
+    border: 10px double white;
+    z-index: 0;
+    box-shadow: 12px 13px 50px 10px rgba(16, 135, 225, 0.7);
+}
+.profil-isi{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    color: white;
+}
+#desc{
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    background-color: none;
+    color: white;
+}
+.bio{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 10;
+    margin-left: 400px;
+    margin-top: 150px;
+    font-family: 'Poppins',sans-serif;
+}
+#warna{
+    color: rgb(16, 135, 225);
+    text-shadow: 2px 2px 20px rgba(16, 135, 225, 0.9);
+}
+.bio-img{
+    width: 300px;
+    height: 480px;
+    background-color: none;
+    position: relative;
+    z-index: 10;
+}
+.bio-img img{
+    width: 300px;
+    height: 480px;
+}
+.sosmed{
+    width: 300px;
+    height: 50px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: -230px;
+    margin-left: 400px;
+    z-index: 11;
+}
+.instagram, .youtube, .whatsapp, .github{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    visibility: hidden;
+    transition: 1s;
+}
+.tambah{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 0px 2px 5px rgba(16, 135, 225, 0.7);
+    transition: 0s;
+    cursor: pointer;
+}
+.myskill {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 500px;
+    height: 500px;
+    border: 10px double rgb(16, 135, 225);
+}
+
+.frm1 {
+    width: 80%;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -30px;
+    height: 500px;
+    border: 10px double white;
+    z-index: 0;
+    box-shadow: 12px 13px 50px 10px rgba(16, 135, 225, 0.7);
+}
+.myskill-isi{
+    display: grid;
+}
+.head-skill{
+    width: 30%;
+    height: 80px;
+    background-color: none;
+    margin-top: 30px;
+    margin-left: 550px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.html{
+    width: 80%;
+    height: 80px;
+    background-color: none;
+    margin-top: 10px;
+    margin-left: 150px;
+    color: white;
+}
+.skill1{
+    width: 0px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: linear-gradient(36deg, #8A19FF 0%, #13A2CA 100%);
+    animation: skill 2s linear infinite;
+    background-size: 200% 200%;
+}
+@keyframes skill {
+    0% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 100%;
+    }
+    
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.css {
+    width: 80%;
+    height: 80px;
+    background-color: none;
+    margin-top: 10px;
+    margin-left: 150px;
+    color: white;
+}
+.skill2 {
+    width: 0px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: linear-gradient(36deg, #8A19FF 0%, #13A2CA 100%);
+    transition: 0s;
+    animation: skill 2.5s linear infinite;
+    background-size: 200% 200%;
+}
+.js {
+    width: 80%;
+    height: 80px;
+    background-color: none;
+    margin-top: 10px;
+    margin-left: 150px;
+    color: white;
+}
+.skill3 {
+    width: 0px;
+    height: 25px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: linear-gradient(36deg, #8A19FF 0%, #13A2CA 100%);
+    transition: 0s;
+    animation: skill 3s linear infinite;
+    background-size: 200% 200%;
+}
+.my-artikel{
+    width: 100%;
+    height: 1300px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 300px;
+    text-align: center;
+}
+.my-artikel h1{
+    color: white;
+}
+.isi-artikel{
+    width: 80%;
+    height: 800px;
+    margin-left: 10%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 100px;
+}
+.isi-content{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgba(16, 135, 225, 0.9);
+    overflow: hidden;
+    border: 4px solid transparent;
+    border-image: linear-gradient(-120deg, #8A19FF 30%, #13A2CA 100%);
+    border-image-slice: 1;
+    animation: rotate 2s linear infinite;
+}
+
+.isi-content h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.isi-content:hover {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    border: 4px solid transparent;
+    border-image: linear-gradient(-120deg, #8A19FF 30%, #13A2CA 100%);
+    border-image-slice: 1;
+    animation: rotate 2s linear infinite;
+
+}
+.isi-content img{
+    width: 400px;
+    height: 400px;
+}
+.tulisan{
+    width: 400px;
+    height: 00px;
+    position: absolute;
+    margin-top: -00px;
+    background: linear-gradient(342deg, #8A19FF 0%, #13A2CA 100%);
+    color: white;
+    transition: 1s;
+    visibility: hidden;
+    overflow: hidden;
+}
+@keyframes bg-slide {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.tulisan button{
+    height: 30px;
+    width: 200px;
+    background: linear-gradient(-120deg, #8A19FF 0%, #13A2CA 100%);
+    border-radius: 5px;
+    margin-top: 10px;
+    background-size: 400% 400%;
+    border:1px solid rgb(0, 0, 0,0.5);
+    animation: slide 5s ease infinite;
+    transition: 3s;
+}
+.tulisan a{
+    text-decoration: none;
+    color: white;
+}
+.isi-content:hover .tulisan{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    margin-top: -250px;
+    background: linear-gradient(-120deg, #8A19FF 30%, #13A2CA 100%);
+    color: white;
+    visibility: visible;
+    cursor: pointer;
+    overflow: hidden;
+    animation: bg-slide 5s ease infinite;
+    background-size: 200% 200%;
+}
+@keyframes slide {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.my-project {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+}
+.isi-contentproject img {
+    width: 150px;
+    height: 300px;
+    transition: 1s;
+    border-radius: 20px;
+}
+.isi-contentproject{
+    width: 150px;
+    height: 300px;
+    margin-top: 100px;
+    margin-right: 0px;
+    margin-left: 0px;
+    transition: 1s;
+    position: block;
+    border: 2px solid transparent;
+    border-image: linear-gradient(-120deg, #8A19FF 30%, #13A2CA 100%);
+    border-image-slice: 1;
+    border-radius: 20px;
+    filter: blur(3px);
+
+}
+.isi-contentproject:hover {
+    width: 150px;
+    height: 300px;
+    margin-top: 100px;
+    margin-right: 35px;
+    margin-left: 35px;
+    transition: 1s;
+    position: block;
+    border: 4px solid transparent;
+    border-image: linear-gradient(-120deg, #8A19FF 30%, #13A2CA 100%);
+    border-image-slice: 1;
+    filter: blur(0px);
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    50%{
+        border-image: linear-gradient(0deg, #8A19FF 30%, #13A2CA 100%);
+        border-image-slice: 1;
+    }
+    to{
+        border-image: linear-gradient(120deg, #8A19FF 30%, #13A2CA 100%);
+        border-image-slice: 1;
+        
+    }
+}
+.isi-project {
+    width: 80%;
+    height: 800px;
+    margin-left: 10%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.tulisan-project{
+    position: absolute;
+    color: white;
+    margin-top: -120px;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.tulisan-project h3 {
+    transform: rotate(-90deg);
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
+.isi-contentproject:hover .tulisan-project h3 {
+    transform: rotate(0deg);
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    margin-bottom: 20px;
+}
+.isi-contentproject:hover img {
+    width: 400px;
+    height: 400px;
+    margin-top: 0px;
+}
+.isi-contentproject:hover {
+    width: 400px;
+    height: 400px;
+    margin-top: 0px;
+}
+.isi-contentproject:hover .tulisan-project {
+    position: absolute;
+    color: white;
+    margin-top: -50px;
+    margin-left: 10px;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.isi-contentproject:hover .tulisan-project h3 {
+    color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 1600px) {
+    .head-skill {
+        width: 30%;
+        height: 80px;
+        background-color: none;
+        margin-top: 30px;
+        margin-left: 400px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 1.5em;
+        color: white;
+    }
+
+
+
+    .my-artikel {
+        width: 100%;
+        height: 1300px;
+        background-color: rgb(0, 0, 0);
+        margin-top: 300px;
+        text-align: center;
+    }
+
+    .my-artikel h1 {
+        color: white;
+    }
+
+    .isi-artikel {
+        width: 80%;
+        height: 800px;
+        margin-left: 10%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 100px;
+    }
+
+    .isi-content {
+        width: 350px;
+        height: 350px;
+        background-color: rgb(0, 0, 0);
+        border: 2px solid rgba(16, 135, 225, 0.9);
+        box-shadow: 0px 0px 40px 8px rgba(16, 135, 225, 0.7);
+        overflow: hidden;
+    }
+
+    .isi-content h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .isi-content:hover {
+        width: 350px;
+        height: 350px;
+        background-color: rgb(0, 0, 0);
+        border: 2px solid rgba(16, 135, 225, 0.9);
+        box-shadow: 0px 0px 40px 8px rgba(16, 135, 225, 0.7);
+
+    }
+
+    .isi-content img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .tulisan {
+        width: 350px;
+        height: 00px;
+        position: absolute;
+        margin-top: -00px;
+        background: linear-gradient(342deg, #8A19FF 0%, #13A2CA 100%);
+        color: white;
+        transition: 1s;
+        visibility: hidden;
+        overflow: hidden;
+        font-size: 0.7em;
+    }
+
+    .tulisan button {
+        height: 30px;
+        width: 200px;
+        background: linear-gradient(342deg, #8A19FF 0%, #13A2CA 100%);
+        border-radius: 5px;
+        margin-top: 10px;
+        background-size: 400% 400%;
+        border: 1px solid rgb(0, 0, 0, 0.5);
+        animation: slide 5s ease infinite;
+        transition: 3s;
+        font-size: 1em;
+    }
+
+    .tulisan a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .isi-content:hover .tulisan {
+        width: 350px;
+        height: 180px;
+        position: absolute;
+        margin-top: -185px;
+        background: linear-gradient(342deg, #8A19FF 30%, #13A2CA 100%);
+        color: white;
+        visibility: visible;
+        cursor: pointer;
+        overflow: hidden;
+        animation: bg-slide 5s ease infinite;
+        background-size: 200% 200%;
+        font-size: 0.7em;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .head-skill {
+        width: 30%;
+        height: 80px;
+        background-color: none;
+        margin-top: 30px;
+        margin-left: 350px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 1.5em;
+        color: white;
+    }
+
+
+
+    .my-artikel {
+        width: 100%;
+        height: 1300px;
+        background-color: rgb(0, 0, 0);
+        margin-top: 300px;
+        text-align: center;
+    }
+    
+    .my-artikel h1 {
+        color: white;
+    }
+    
+    .isi-artikel {
+        width: 80%;
+        height: 800px;
+        margin-left: 5%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 100px;
+    }
+    
+    .isi-content {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(0, 0, 0);
+        border: 2px solid rgba(16, 135, 225, 0.9);
+        box-shadow: 0px 0px 40px 8px rgba(16, 135, 225, 0.7);
+        overflow: hidden;
+    }
+    
+    .isi-content h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .isi-content:hover {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(0, 0, 0);
+        border: 2px solid rgba(16, 135, 225, 0.9);
+        box-shadow: 0px 0px 40px 8px rgba(16, 135, 225, 0.7);
+    
+    }
+    
+    .isi-content img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .tulisan {
+        width: 300px;
+        height: 00px;
+        position: absolute;
+        margin-top: -00px;
+        background: linear-gradient(342deg, #8A19FF 0%, #13A2CA 100%);
+        color: white;
+        transition: 1s;
+        visibility: hidden;
+        overflow: hidden;
+        font-size: 0.7em;
+    }
+    
+    .tulisan button {
+        height: 30px;
+        width: 200px;
+        background: linear-gradient(342deg, #8A19FF 0%, #13A2CA 100%);
+        border-radius: 5px;
+        margin-top: 10px;
+        background-size: 400% 400%;
+        border: 1px solid rgb(0, 0, 0, 0.5);
+        animation: slide 5s ease infinite;
+        transition: 3s;
+        font-size: 1em;
+    }
+    
+    .tulisan a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .isi-content:hover .tulisan {
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        margin-top: -185px;
+        background: linear-gradient(342deg, #8A19FF 30%, #13A2CA 100%);
+        color: white;
+        visibility: visible;
+        cursor: pointer;
+        overflow: hidden;
+        animation: bg-slide 5s ease infinite;
+        background-size: 200% 200%;
+        font-size: 0.7em;
+    }
+}
+@media only screen and (max-width: 1080px){
+    .bg {
+        background-color: rgb(0, 0, 0);
+        height: 6000px;
+        width: 1080px;
+        overflow-x: hidden;
+    }
+    
+    .parallax {
+        background-image: url(../assets/bg.jpg);
+        width: calc(1080px + 50px);
+        height: 900px;
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        overflow: hidden;
+    }
+    
+    .stars {
+        position: absolute;
+        width: 1080px;
+        margin-top: 100px;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .child1 img,
+    .child2 img,
+    .child3 img,
+    .child4 img,
+    .child5 img {
+        width: 10px;
+        height: 10px;
+        transition: 1s;
+        transform: scale(3);
+        animation: stars 2s infinite;
+    
+    }
+    
+    .child1 img,
+    .child3 img,
+    .child5 img {
+        margin-top: 150px;
+        animation: stars2 3s infinite;
+        animation-delay: 3s;
+        transition: 1s;
+    }
+    
+    @keyframes stars {
+        0% {
+            transform: scale(1)
+        }
+    
+        ;
+    
+        50% {
+            transform: scale(3)
+        }
+    
+        ;
+    
+        100% {
+            transform: scale(1)
+        }
+    
+        ;
+    }
+    
+    @keyframes stars2 {
+        0% {
+            transform: scale(1)
+        }
+    
+        ;
+    
+        50% {
+            transform: scale(3)
+        }
+    
+        ;
+    
+        100% {
+            transform: scale(1)
+        }
+    
+        ;
+    }
+    
+    .fall {
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+    }
+    
+    .fall1,
+    .fall2,
+    .fall3 {
+        width: 5px;
+        height: 80px;
+        background: linear-gradient(360deg, #ffebcd 0%, #12529C 100%);
+        border-radius: 50%;
+        margin: 10px;
+        transform: translate(-100px, -300px)
+    }
+    
+    .fall1 {
+        animation: fall1 5s linear infinite;
+        animation-delay: 0s;
+    }
+    
+    @keyframes fall1 {
+        from {
+            transform: translate(2000px, -300px) rotate(50deg);
+        }
+    
+        to {
+            transform: translate(0px, 1000px) rotate(50deg);
+        }
+    
+    }
+    
+    .fall2 {
+        animation: fall2 6s linear infinite;
+        animation-delay: 3s;
+    }
+    
+    @keyframes fall2 {
+        from {
+            transform: translate(1000px, -300px) rotate(45deg);
+        }
+    
+        to {
+            transform: translate(-500px, 1000px) rotate(45deg);
+        }
+    
+    }
+    
+    .fall3 {
+        animation: fall3 7s linear infinite;
+        animation-delay: 4s;
+    }
+    
+    @keyframes fall3 {
+        from {
+            transform: translate(2000px, -300px) rotate(45deg);
+        }
+    
+        to {
+            transform: translate(500px, 1000px) rotate(45deg);
+        }
+    
+    }
+    
+    .moon {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        margin-left: 500px;
+        transform: translateY(150px);
+        background-color: none;
+    }
+    
+    .moonin {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        display: flex;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: 0px 0px 50px 10px rgba(250, 235, 215, 0.7);
+        background-color: rgb(250, 235, 215, 0.4);
+        visibility: visible;
+        z-index: 7;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .moonout {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        display: flex;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: 0px 0px 50px 10px rgba(250, 235, 215, 0.7);
+        background-color: rgb(250, 235, 215, 0.4);
+        visibility: hidden;
+        z-index: 7;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .moonin img {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        transition: 1.5s;
+    }
+    
+    .moonout img {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        transition: 1.5s;
+        animation: puter 15s infinite;
+    }
+    
+    .bg-p {
+        width: 100%;
+        height: 900px;
+        overflow-x: hidden;
+    }
+    
+    .bg-p img {
+        width: 100%;
+        height: 900px;
+    
+    }
+    
+    .tree1 {
+        width: 25%;
+        height: 500px;
+        position: absolute;
+        z-index: 5;
+    
+    }
+    
+    .tree1 img,
+    .tree2 img,
+    .tree3 img,
+    .tree4 img {
+        width: 700px;
+        height: auto;
+        opacity: 0.9.9;
+        animation: pohon 5s infinite;
+    }
+    
+    @keyframes pohon {
+        0% {
+            transform: skew(0deg);
+        }
+    
+        50% {
+            transform: skew(8deg);
+        }
+    
+        100% {
+            transform: skew(0deg);
+        }
+    }
+    
+    .tree2 {
+        width: 25%;
+        height: 500px;
+        position: absolute;
+        right: 0;
+        z-index: 5;
+    }
+    
+    .tree3 {
+        width: 25%;
+        height: 500px;
+        position: absolute;
+        right: 0;
+        z-index: 5;
+    }
+    
+    .tree4 {
+        width: 25%;
+        height: 500px;
+        position: absolute;
+        left: 0;
+        z-index: 5;
+    }
+    
+    .tree1,
+    .tree2 {
+        margin-top: 200px;
+        z-index: 1;
+    }
+    
+    .tree3,
+    .tree4 {
+        margin-top: 150px;
+        z-index: 1;
+    }
+    
+    .tree1 img {
+    
+        margin-left: 300px;
+    }
+    
+    .tree2 img {
+        margin-left: -400px;
+    }
+    
+    .tree3 img {
+        margin-left: -50px;
+    }
+    
+    .tree4 img {
+        margin-left: -300px;
+    }
+    
+    .navbar {
+        background-color: none;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        margin-left: 540px;
+        margin-top: 170px;
+        z-index: 1;
+        transition: 2s;
+        animation: puter 15s linear infinite;
+    }
+    
+    @keyframes puter {
+        0% {
+            transform: rotateZ(0deg);
+        }
+    
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
+    
+    .navbar img {
+        width: 40px;
+        height: 40px;
+        animation: gambar 15s linear infinite;
+    }
+    
+    @keyframes gambar {
+        0% {
+            transform: rotateZ(0deg);
+        }
+    
+        100% {
+            transform: rotateZ(-360deg);
+        }
+    }
+    
+    .home,
+    .project,
+    .artikel,
+    .contact {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(248, 248, 233);
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 0px 0px 50px 10px rgba(250, 235, 215, 0.7);
+        visibility: hidden;
+        z-index: 8;
+    }
+    
+    .profil {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 500px;
+        height: 500px;
+        border: 10px double rgb(16, 135, 225);
+    }
+    
+    .frm {
+        width: 900px;
+        position: absolute;
+        margin-top: -30px;
+        margin-left: -30px;
+        height: 500px;
+        border: 10px double white;
+        z-index: 0;
+        box-shadow: 12px 13px 50px 10px rgba(16, 135, 225, 0.7);
+    }
+    
+    .profil-isi {
+        width: 900px;
+        height: 500px;
+        background-color: black;
+        color: white;
+    }
+    
+    #desc {
+        margin-top: 20px;
+        width: 200px;
+        height: 30px;
+        background-color: none;
+        color: white;
+    }
+    
+    .bio {
+        width: 30%;
+        height: 200px;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        z-index: 10;
+        margin-left: 400px;
+        margin-top: 150px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #warna {
+        color: rgb(16, 135, 225);
+        text-shadow: 2px 2px 20px rgba(16, 135, 225, 0.9);
+    }
+    
+    .bio-img {
+        width: 300px;
+        height: 480px;
+        background-color: none;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .bio-img img {
+        width: 300px;
+        height: 480px;
+    }
+    
+    .sosmed {
+        width: 300px;
+        height: 50px;
+        background-color: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        margin-top: -230px;
+        margin-left: 400px;
+        z-index: 11;
+    }
+    
+    .instagram,
+    .youtube,
+    .whatsapp,
+    .github {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        visibility: hidden;
+        transition: 1s;
+    }
+    
+    .tambah {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0px 0px 2px 5px rgba(16, 135, 225, 0.7);
+        transition: 0s;
+        cursor: pointer;
+    }
+    
+    .myskill {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 500px;
+        height: 500px;
+        border: 10px double rgb(16, 135, 225);
+    }
+    
+    .frm1 {
+        width: 900px;
+        position: absolute;
+        margin-top: -30px;
+        margin-left: -30px;
+        height: 500px;
+        border: 10px double white;
+        z-index: 0;
+        box-shadow: 12px 13px 50px 10px rgba(16, 135, 225, 0.7);
+    }
+    
+    .myskill-isi {
+        display: grid;
+    }
+    
+    .head-skill {
+        width: 30%;
+        height: 80px;
+        background-color: none;
+        margin-top: 30px;
+        margin-left: 550px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 1.5em;
+        color: white;
+    }
+    
+    .html {
+        width: 80%;
+        height: 80px;
+        background-color: none;
+        margin-top: 10px;
+        margin-left: 150px;
+        color: white;
+    }
+    
+    .skill1 {
+        width: 0px;
+        height: 25px;
+        border-radius: 5px;
+        margin-top: 20px;
+        background: linear-gradient(36deg, #8A19FF 0%, #13A2CA 100%);
+        animation: skill 2s linear infinite;
+        background-size: 200% 200%;
+    }
+    
+    @keyframes skill {
+        0% {
+            background-position: 0% 50%;
+        }
+    
+        50% {
+            background-position: 100% 100%;
+        }
+    
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    .css {
+        width: 80%;
+        height: 80px;
+        background-color: none;
+        margin-top: 10px;
+        margin-left: 150px;
+        color: white;
+    }
+    
+    .skill2 {
+        width: 0px;
+        height: 25px;
+        border-radius: 5px;
+        margin-top: 20px;
+        background: linear-gradient(36deg, #8A19FF 0%, #13A2CA 100%);
+        transition: 0s;
+        animation: skill 2.5s linear infinite;
+        background-size: 200% 200%;
+    }
+    
+    .js {
+        width: 80%;
+        height: 80px;
+        background-color: none;
+        margin-top: 10px;
+        margin-left: 150px;
+        color: white;
+    }
+    
+    .skill3 {
+        width: 0px;
+        height: 25px;
+        border-radius: 5px;
+        margin-top: 20px;
+        background: linear-gradient(36deg, #8A19FF 0%, #13A2CA 100%);
+        transition: 0s;
+        animation: skill 3s linear infinite;
+        background-size: 200% 200%;
+    }
+    
+    .my-artikel {
+        width: 100%;
+        height: 1300px;
+        background-color: rgb(0, 0, 0);
+        margin-top: 300px;
+        text-align: center;
+    }
+    
+    .my-artikel h1 {
+        color: white;
+    }
+    
+    .isi-artikel {
+        width: 80%;
+        height: 800px;
+        margin-left: 10%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 100px;
+    }
+    
+    .isi-content {
+        width:200px;
+        height: 200px;
+        background-color: rgb(0, 0, 0);
+        border: 2px solid rgba(16, 135, 225, 0.9);
+        overflow: hidden;
+        border: 4px solid transparent;
+        border-image: linear-gradient(-120deg, #8A19FF 30%, #13A2CA 100%);
+        border-image-slice: 1;
+        animation: rotate 2s linear infinite;
+    }
+    
+    .isi-content h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .isi-content:hover {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(0, 0, 0);
+        border: 4px solid transparent;
+        border-image: linear-gradient(-120deg, #8A19FF 30%, #13A2CA 100%);
+        border-image-slice: 1;
+        animation: rotate 2s linear infinite;
+    
+    }
+    
+    .isi-content img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .tulisan {
+        width: 200px;
+        height: 00px;
+        position: absolute;
+        margin-top: -00px;
+        background: linear-gradient(342deg, #8A19FF 0%, #13A2CA 100%);
+        color: white;
+        transition: 1s;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    
+    @keyframes bg-slide {
+        0% {
+            background-position: 0% 50%;
+        }
+    
+        50% {
+            background-position: 100% 50%;
+        }
+    
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    .tulisan button {
+        height: 30px;
+        width: 100px;
+        background: linear-gradient(-120deg, #8A19FF 0%, #13A2CA 100%);
+        border-radius: 5px;
+        margin-top: 10px;
+        background-size: 400% 400%;
+        border: 1px solid rgb(0, 0, 0, 0.5);
+        animation: slide 5s ease infinite;
+        transition: 3s;
+    }
+    
+    .tulisan a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .isi-content:hover .tulisan {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        margin-top: -150px;
+        background: linear-gradient(-120deg, #8A19FF 30%, #13A2CA 100%);
+        color: white;
+        visibility: visible;
+        cursor: pointer;
+        overflow: hidden;
+        animation: bg-slide 5s ease infinite;
+        background-size: 200% 200%;
+    }
+    
+    @keyframes slide {
+        0% {
+            background-position: 0% 50%;
+        }
+    
+        50% {
+            background-position: 100% 50%;
+        }
+    
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    .my-project {
+        width: 100%;
+        height: 700px;
+        background-color: rgb(0, 0, 0);
+        margin-top: 100px;
+        text-align: center;
+        color: white;
+    }
+    
+    .isi-contentproject img {
+        width: 150px;
+        height: 300px;
+        transition: 1s;
+        border-radius: 20px;
+    }
+    
+    .isi-contentproject {
+        width: 150px;
+        height: 300px;
+        margin-top: 100px;
+        margin-right: 0px;
+        margin-left: 0px;
+        transition: 1s;
+        position: block;
+        border: 2px solid transparent;
+        border-image: linear-gradient(-120deg, #8A19FF 30%, #13A2CA 100%);
+        border-image-slice: 1;
+        border-radius: 20px;
+        filter: blur(3px);
+    
+    }
+    
+    .isi-contentproject:hover {
+        width: 150px;
+        height: 300px;
+        margin-top: 100px;
+        margin-right: 35px;
+        margin-left: 35px;
+        transition: 1s;
+        position: block;
+        border: 4px solid transparent;
+        border-image: linear-gradient(-120deg, #8A19FF 30%, #13A2CA 100%);
+        border-image-slice: 1;
+        filter: blur(0px);
+        animation: rotate 2s linear infinite;
+    }
+    
+    @keyframes rotate {
+        50% {
+            border-image: linear-gradient(0deg, #8A19FF 30%, #13A2CA 100%);
+            border-image-slice: 1;
+        }
+    
+        to {
+            border-image: linear-gradient(120deg, #8A19FF 30%, #13A2CA 100%);
+            border-image-slice: 1;
+    
+        }
+    }
+    
+    .isi-project {
+        width: 80%;
+        height: 800px;
+        margin-left: 10%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tulisan-project {
+        position: absolute;
+        color: white;
+        margin-top: -120px;
+        transform: rotate(0deg);
+        transition: 1s;
+    }
+    
+    .tulisan-project h3 {
+        transform: rotate(-90deg);
+        color: rgb(255, 255, 255);
+        transition: 1s;
+    }
+    
+    .isi-contentproject:hover .tulisan-project h3 {
+        transform: rotate(0deg);
+        color: rgb(255, 255, 255);
+        transition: 1s;
+        margin-bottom: 20px;
+    }
+    
+    .isi-contentproject:hover img {
+        width: 400px;
+        height: 400px;
+        margin-top: 0px;
+    }
+    
+    .isi-contentproject:hover {
+        width: 400px;
+        height: 400px;
+        margin-top: 0px;
+    }
+    
+    .isi-contentproject:hover .tulisan-project {
+        position: absolute;
+        color: white;
+        margin-top: -50px;
+        margin-left: 10px;
+        transform: rotate(0deg);
+        transition: 1s;
+    }
+    
+    .isi-contentproject:hover .tulisan-project h3 {
+        color: rgb(255, 255, 255);
+    }
+}
