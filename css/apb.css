@@ -1,0 +1,20 @@
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(36deg, #8A19FF 0%, #13A2CA 100%);
+    color: white;
+    cursor: pointer;
+}
+table{
+    text-align: center;
+
+}
+th,td{
+    padding: 10px 30px 10px 30px;
+}
+th{
+    font-size: 1.2em;
+    font-weight: bold;
+}
