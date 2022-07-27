@@ -1,4 +1,4 @@
-[<button>Back</button>](index.html)
+[<button>Back</button>](https://shznnn.com)
 
 # Keunggulan antara Blogspot dan wordpress dilihat dari sisi kompabilitas dan konektifitas.
 
