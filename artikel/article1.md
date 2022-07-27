@@ -1,4 +1,4 @@
-[<button>Back</button>](/)
+[<button>Back</button>](https://shznnn.com)
 
 # Mengenal HTML
 
