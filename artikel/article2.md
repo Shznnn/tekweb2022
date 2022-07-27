@@ -1,4 +1,4 @@
-[<button>Back</button>](index.html)
+[<button>Back</button>](https://shznnn.com)
 
 # PHPMaker, Bukan Pembuat Pemberi Harapan Palsu
 
