@@ -1,4 +1,4 @@
-[<button>Back</button>](index.html)
+[<button>Back</button>](/)
 
 # Mengenal HTML
 
