@@ -1,4 +1,4 @@
-[<button>Back</button>](index.html)
+[<button>Back</button>](https://shznnn.com)
 
 # Blog atau website pribadi, mana yang lebih bagus untuk anda?
 
